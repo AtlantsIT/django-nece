@@ -26,7 +26,7 @@ setup(
     keywords=['translations', 'i18n', 'language', 'multilingual'],
     packages=['nece'],
     install_requires=[
-        'Django>=1.9',
+        'Django>=4',
         'six>=1.10.0',
     ],
     extras_require={

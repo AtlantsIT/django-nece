@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.contrib.postgres.fields import JSONField
 from django.db import models
 from django.db.models import options
 
@@ -19,7 +18,7 @@ class Language(object):
 
 
 class TranslationModel(models.Model, TranslationMixin):
-    translations = JSONField(null=True, blank=True)
+    translations = models.JSONField(null=True, blank=True)
     default_language = None
     _translated = None
 
